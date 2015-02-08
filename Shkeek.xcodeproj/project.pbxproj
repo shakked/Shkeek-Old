@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0117581A8808AC004B80F6 /* ZSSWelcomeChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0117561A8808AC004B80F6 /* ZSSWelcomeChildViewController.m */; };
+		4A0117591A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0117571A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib */; };
+		4A01175D1A8808C1004B80F6 /* ZSSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A01175B1A8808C1004B80F6 /* ZSSLoginViewController.m */; };
+		4A01175E1A8808C1004B80F6 /* ZSSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */; };
 		4A5021F11A87E4E8000DAEBE /* ZSSWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5021EF1A87E4E8000DAEBE /* ZSSWelcomeViewController.m */; };
 		4A5021F21A87E4E8000DAEBE /* ZSSWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5021EF1A87E4E8000DAEBE /* ZSSWelcomeViewController.m */; };
 		4A5021F31A87E4E8000DAEBE /* ZSSWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5021F01A87E4E8000DAEBE /* ZSSWelcomeViewController.xib */; };
@@ -33,6 +37,12 @@
 
 /* Begin PBXFileReference section */
 		058014F8E92491A5A8E417CC /* Pods-Shkeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shkeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shkeek/Pods-Shkeek.release.xcconfig"; sourceTree = "<group>"; };
+		4A0117551A8808AC004B80F6 /* ZSSWelcomeChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSWelcomeChildViewController.h; sourceTree = "<group>"; };
+		4A0117561A8808AC004B80F6 /* ZSSWelcomeChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSWelcomeChildViewController.m; sourceTree = "<group>"; };
+		4A0117571A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSSWelcomeChildViewController.xib; sourceTree = "<group>"; };
+		4A01175A1A8808C1004B80F6 /* ZSSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSLoginViewController.h; sourceTree = "<group>"; };
+		4A01175B1A8808C1004B80F6 /* ZSSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSLoginViewController.m; sourceTree = "<group>"; };
+		4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSSLoginViewController.xib; sourceTree = "<group>"; };
 		4A5021EE1A87E4E8000DAEBE /* ZSSWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSWelcomeViewController.h; sourceTree = "<group>"; };
 		4A5021EF1A87E4E8000DAEBE /* ZSSWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSWelcomeViewController.m; sourceTree = "<group>"; };
 		4A5021F01A87E4E8000DAEBE /* ZSSWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSSWelcomeViewController.xib; sourceTree = "<group>"; };
@@ -94,10 +104,16 @@
 			isa = PBXGroup;
 			children = (
 				4A59CFB01A87DFA800DA5C1C /* AppDelegate.h */,
+				4A59CFB11A87DFA800DA5C1C /* AppDelegate.m */,
 				4A5021EE1A87E4E8000DAEBE /* ZSSWelcomeViewController.h */,
 				4A5021EF1A87E4E8000DAEBE /* ZSSWelcomeViewController.m */,
 				4A5021F01A87E4E8000DAEBE /* ZSSWelcomeViewController.xib */,
-				4A59CFB11A87DFA800DA5C1C /* AppDelegate.m */,
+				4A0117551A8808AC004B80F6 /* ZSSWelcomeChildViewController.h */,
+				4A0117561A8808AC004B80F6 /* ZSSWelcomeChildViewController.m */,
+				4A0117571A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib */,
+				4A01175A1A8808C1004B80F6 /* ZSSLoginViewController.h */,
+				4A01175B1A8808C1004B80F6 /* ZSSLoginViewController.m */,
+				4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */,
 				4A59CFB91A87DFA800DA5C1C /* Images.xcassets */,
 				4A59CFBB1A87DFA800DA5C1C /* LaunchScreen.xib */,
 				4A59CFAC1A87DFA800DA5C1C /* Supporting Files */,
@@ -234,6 +250,8 @@
 				4A5021F31A87E4E8000DAEBE /* ZSSWelcomeViewController.xib in Resources */,
 				4A59CFD31A87E12300DA5C1C /* Keys.plist in Resources */,
 				4A59CFBD1A87DFA800DA5C1C /* LaunchScreen.xib in Resources */,
+				4A01175E1A8808C1004B80F6 /* ZSSLoginViewController.xib in Resources */,
+				4A0117591A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib in Resources */,
 				4A59CFBA1A87DFA800DA5C1C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A59CFB21A87DFA800DA5C1C /* AppDelegate.m in Sources */,
+				4A01175D1A8808C1004B80F6 /* ZSSLoginViewController.m in Sources */,
+				4A0117581A8808AC004B80F6 /* ZSSWelcomeChildViewController.m in Sources */,
 				4A59CFAF1A87DFA800DA5C1C /* main.m in Sources */,
 				4A5021F11A87E4E8000DAEBE /* ZSSWelcomeViewController.m in Sources */,
 			);
