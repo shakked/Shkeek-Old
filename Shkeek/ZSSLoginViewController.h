@@ -10,4 +10,6 @@
 
 @interface ZSSLoginViewController : UIViewController
 
+@property (nonatomic) NSInteger index;
+
 @end

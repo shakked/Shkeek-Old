@@ -24,6 +24,7 @@
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageViewController.dataSource = self;
+    self.pageViewController.view.frame = self.view.frame;
     
     ZSSWelcomeChildViewController *initialViewController = [self viewControllerAtIndex:0];
     
@@ -32,7 +33,7 @@
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     [self addChildViewController:self.pageViewController];
-    [[self view] addSubview:[self.pageViewController view]];
+    [self.view addSubview:self.pageViewController.view];
     [self.pageViewController didMoveToParentViewController:self];
 }
 
@@ -68,14 +69,15 @@
     NSUInteger index = [(ZSSWelcomeChildViewController *)viewController index];
     
     index++;
-    if (index == 4) {
-        return [[ZSSLoginViewController alloc] init];
-    }
+
     if (index == 5) {
         return nil;
+    } else if (index == 4) {
+        return [[ZSSLoginViewController alloc] init];
     }
     
     return [self viewControllerAtIndex:index];
+    
     
 }
 

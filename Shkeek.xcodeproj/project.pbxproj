@@ -22,6 +22,7 @@
 		4A59CFC91A87DFA800DA5C1C /* ShkeekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59CFC81A87DFA800DA5C1C /* ShkeekTests.m */; };
 		4A59CFD31A87E12300DA5C1C /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A59CFD21A87E12300DA5C1C /* Keys.plist */; };
 		4A59CFD41A87E12300DA5C1C /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A59CFD21A87E12300DA5C1C /* Keys.plist */; };
+		4AA17F101A883D55004278F1 /* ZSSCloudQuerier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA17F0F1A883D55004278F1 /* ZSSCloudQuerier.m */; };
 		7EBF9C4F10EBB90B31B6D03E /* libPods-Shkeek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD3F0543D9FB81A2B92A1DF /* libPods-Shkeek.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		4A59CFC71A87DFA800DA5C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A59CFC81A87DFA800DA5C1C /* ShkeekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShkeekTests.m; sourceTree = "<group>"; };
 		4A59CFD21A87E12300DA5C1C /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		4AA17F0E1A883D55004278F1 /* ZSSCloudQuerier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSCloudQuerier.h; sourceTree = "<group>"; };
+		4AA17F0F1A883D55004278F1 /* ZSSCloudQuerier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSCloudQuerier.m; sourceTree = "<group>"; };
 		7BD3F0543D9FB81A2B92A1DF /* libPods-Shkeek.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shkeek.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AE1B7A6A2C6B821D32BBDA /* Pods-Shkeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shkeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shkeek/Pods-Shkeek.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,15 +108,9 @@
 			children = (
 				4A59CFB01A87DFA800DA5C1C /* AppDelegate.h */,
 				4A59CFB11A87DFA800DA5C1C /* AppDelegate.m */,
-				4A5021EE1A87E4E8000DAEBE /* ZSSWelcomeViewController.h */,
-				4A5021EF1A87E4E8000DAEBE /* ZSSWelcomeViewController.m */,
-				4A5021F01A87E4E8000DAEBE /* ZSSWelcomeViewController.xib */,
-				4A0117551A8808AC004B80F6 /* ZSSWelcomeChildViewController.h */,
-				4A0117561A8808AC004B80F6 /* ZSSWelcomeChildViewController.m */,
-				4A0117571A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib */,
-				4A01175A1A8808C1004B80F6 /* ZSSLoginViewController.h */,
-				4A01175B1A8808C1004B80F6 /* ZSSLoginViewController.m */,
-				4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */,
+				4AA17F111A883D63004278F1 /* Login and Welcome */,
+				4AA17F0E1A883D55004278F1 /* ZSSCloudQuerier.h */,
+				4AA17F0F1A883D55004278F1 /* ZSSCloudQuerier.m */,
 				4A59CFB91A87DFA800DA5C1C /* Images.xcassets */,
 				4A59CFBB1A87DFA800DA5C1C /* LaunchScreen.xib */,
 				4A59CFAC1A87DFA800DA5C1C /* Supporting Files */,
@@ -146,6 +143,22 @@
 				4A59CFC71A87DFA800DA5C1C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AA17F111A883D63004278F1 /* Login and Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				4A5021EE1A87E4E8000DAEBE /* ZSSWelcomeViewController.h */,
+				4A5021EF1A87E4E8000DAEBE /* ZSSWelcomeViewController.m */,
+				4A5021F01A87E4E8000DAEBE /* ZSSWelcomeViewController.xib */,
+				4A0117551A8808AC004B80F6 /* ZSSWelcomeChildViewController.h */,
+				4A0117561A8808AC004B80F6 /* ZSSWelcomeChildViewController.m */,
+				4A0117571A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib */,
+				4A01175A1A8808C1004B80F6 /* ZSSLoginViewController.h */,
+				4A01175B1A8808C1004B80F6 /* ZSSLoginViewController.m */,
+				4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */,
+			);
+			name = "Login and Welcome";
 			sourceTree = "<group>";
 		};
 		57D4CB268594AE646AD2F537 /* Pods */ = {
@@ -305,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA17F101A883D55004278F1 /* ZSSCloudQuerier.m in Sources */,
 				4A59CFB21A87DFA800DA5C1C /* AppDelegate.m in Sources */,
 				4A01175D1A8808C1004B80F6 /* ZSSLoginViewController.m in Sources */,
 				4A0117581A8808AC004B80F6 /* ZSSWelcomeChildViewController.m in Sources */,
