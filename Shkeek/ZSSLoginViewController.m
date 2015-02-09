@@ -45,7 +45,6 @@
 - (void)loginThroughFacebook {
     [[ZSSCloudQuerier sharedQuerier] logInUserThroughFacebookWithCompletion:^(PFUser *user, NSError *error) {
         if (!user) {
-            NSString *errorMessage = nil;
             if (!error) {
                 NSLog(@"Uh oh. The user cancelled the Facebook login.");
             } else {
@@ -55,8 +54,8 @@
 
         } else {
             if (user.isNew) {
-                NSLog(@"User with facebook signed up and logged in!");
-                [[ZSSCloudQuerier sharedQuerier] configureFacebookUserDataWithCompletion:^(NSError *error) {
+                NSLog(@"User with facebook signed up and logged inc");
+                [[ZSSCloudQuerier sharedQuerier] configureFacebookLinkedUser:user withCompletion:^(NSError *error) {
                     if (!error) {
                         [self beginOnboarding];
                     } else {
@@ -72,13 +71,6 @@
 
 - (void)loginThroughTwitter {
     [[ZSSCloudQuerier sharedQuerier] logInUserThroughTwitterWithCompletion:^(PFUser *user, NSError *error) {
-        PFUser *currentUser = [PFUser currentUser];
-        
-        NSLog(@"currentUser.authData: %@",[currentUser valueForKey:@"authData"]);
-        
-        NSDictionary *authData = [[PFUser currentUser] valueForKey:@"authData"];
-        NSLog(@"authData: %@", authData);
-        
         
         if (!user) {
             NSLog(@"Uh oh. The user cancelled the Twitter login.");
@@ -87,6 +79,7 @@
             }
         } else if (user.isNew) {
             NSLog(@"User signed up and logged in with Twitter!");
+            [[ZSSCloudQuerier sharedQuerier] configureTwitterUserData];
         } else {
             NSLog(@"User logged in with Twitter!");
         }

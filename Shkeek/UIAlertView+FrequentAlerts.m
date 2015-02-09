@@ -10,7 +10,7 @@
 
 @implementation UIAlertView (FrequentAlerts)
 
-- (void)showLoginErrorAlert {
++ (void)showLoginErrorAlert {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error"
                                                     message:@"Error logging user in."
                                                    delegate:nil
@@ -19,7 +19,7 @@
     [alert show];
 }
 
-- (void)showNoConnectionErrorAlert {
++ (void)showNoConnectionErrorAlert {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection"
                                                     message:@"Error connecting to the internet"
                                                    delegate:nil

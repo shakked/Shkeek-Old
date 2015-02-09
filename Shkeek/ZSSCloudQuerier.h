@@ -14,9 +14,9 @@
 + (instancetype)sharedQuerier;
 
 - (void)logInUserThroughFacebookWithCompletion:(void (^)(PFUser *, NSError *))completionBlock;
-- (void)configureFacebookUserDataWithCompletion:(void (^)(NSError *))completionBlock;
+- (void)configureFacebookLinkedUser:(PFUser *)user withCompletion:(void (^)(NSError *))completionBlock;
 
 - (void)logInUserThroughTwitterWithCompletion:(void (^)(PFUser *, NSError *))completionBlock;
-- (void)configureTwitterUserDataWithCompletion:(void (^)(NSError *))completionBlock;
+- (void)configureTwitterUserData;
 
 @end

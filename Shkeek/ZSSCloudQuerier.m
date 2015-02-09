@@ -9,6 +9,8 @@
 #import "ZSSCloudQuerier.h"
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
+
+
 @implementation ZSSCloudQuerier
 
 + (instancetype)sharedQuerier {
@@ -46,6 +48,7 @@
             
             user[@"displayName"] = name;
             [user saveInBackground];
+            completionBlock(error);
         }
     }];
 }
@@ -56,8 +59,11 @@
     }];
 }
 
-- (void)configureTwitterUserDataWithCompletion:(void (^)(NSError *))completionBlock {
-
+- (void)configureTwitterUserData {
+    PFUser *currentUser = [PFUser currentUser];
+    currentUser[@"displayName"] = [[[currentUser valueForKey:@"authData"] valueForKey:@"twitter"] valueForKey:@"screen_name"];
+    [currentUser saveInBackground];
+    NSLog(@"currentUser.displayName: %@", currentUser[@"displayName"]);
 }
 
 
