@@ -49,6 +49,11 @@
 		4AA1803C1A883F22004278F1 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA17F1E1A883F21004278F1 /* FBAudienceNetwork.framework */; };
 		4AB1955D1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */; };
 		4AB1955E1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */; };
+		4AB195651A88766600D8F02B /* ZSSLocationQuerier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB195641A88766600D8F02B /* ZSSLocationQuerier.m */; };
+		4AB195661A88766600D8F02B /* ZSSLocationQuerier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB195641A88766600D8F02B /* ZSSLocationQuerier.m */; };
+		4AB195681A88786400D8F02B /* testZSSCloudQuerier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB195671A88786400D8F02B /* testZSSCloudQuerier.m */; };
+		4AB1956B1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1956A1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m */; };
+		4AB1956C1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1956A1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +113,11 @@
 		4AA17F1E1A883F21004278F1 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = ../../../Documents/FacebookSDK/FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		4AB1955B1A88572C00D8F02B /* UIAlertView+FrequentAlerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+FrequentAlerts.h"; sourceTree = "<group>"; };
 		4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+FrequentAlerts.m"; sourceTree = "<group>"; };
+		4AB195631A88766600D8F02B /* ZSSLocationQuerier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSLocationQuerier.h; sourceTree = "<group>"; };
+		4AB195641A88766600D8F02B /* ZSSLocationQuerier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSLocationQuerier.m; sourceTree = "<group>"; };
+		4AB195671A88786400D8F02B /* testZSSCloudQuerier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testZSSCloudQuerier.m; path = ../Shkeek/testZSSCloudQuerier.m; sourceTree = "<group>"; };
+		4AB195691A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSFollowSuggestionTableViewController.h; sourceTree = "<group>"; };
+		4AB1956A1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSFollowSuggestionTableViewController.m; sourceTree = "<group>"; };
 		F0AE1B7A6A2C6B821D32BBDA /* Pods-Shkeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shkeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shkeek/Pods-Shkeek.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +191,8 @@
 				4AA17F111A883D63004278F1 /* Login and Welcome */,
 				4AA17F0E1A883D55004278F1 /* ZSSCloudQuerier.h */,
 				4AA17F0F1A883D55004278F1 /* ZSSCloudQuerier.m */,
+				4AB195631A88766600D8F02B /* ZSSLocationQuerier.h */,
+				4AB195641A88766600D8F02B /* ZSSLocationQuerier.m */,
 				4A59CFB91A87DFA800DA5C1C /* Images.xcassets */,
 				4A59CFBB1A87DFA800DA5C1C /* LaunchScreen.xib */,
 				4A59CFAC1A87DFA800DA5C1C /* Supporting Files */,
@@ -201,6 +213,7 @@
 		4A59CFC51A87DFA800DA5C1C /* ShkeekTests */ = {
 			isa = PBXGroup;
 			children = (
+				4AB195671A88786400D8F02B /* testZSSCloudQuerier.m */,
 				4A59CFC81A87DFA800DA5C1C /* ShkeekTests.m */,
 				4A59CFC61A87DFA800DA5C1C /* Supporting Files */,
 			);
@@ -229,6 +242,8 @@
 				4AB1955B1A88572C00D8F02B /* UIAlertView+FrequentAlerts.h */,
 				4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */,
 				4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */,
+				4AB195691A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.h */,
+				4AB1956A1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m */,
 			);
 			name = "Login and Welcome";
 			sourceTree = "<group>";
@@ -412,6 +427,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA17F101A883D55004278F1 /* ZSSCloudQuerier.m in Sources */,
+				4AB195651A88766600D8F02B /* ZSSLocationQuerier.m in Sources */,
+				4AB1956B1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m in Sources */,
 				4A59CFB21A87DFA800DA5C1C /* AppDelegate.m in Sources */,
 				4AB1955D1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */,
 				4A01175D1A8808C1004B80F6 /* ZSSLoginViewController.m in Sources */,
@@ -425,9 +442,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB195681A88786400D8F02B /* testZSSCloudQuerier.m in Sources */,
+				4AB195661A88766600D8F02B /* ZSSLocationQuerier.m in Sources */,
 				4A5021F21A87E4E8000DAEBE /* ZSSWelcomeViewController.m in Sources */,
 				4AB1955E1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */,
 				4A59CFC91A87DFA800DA5C1C /* ShkeekTests.m in Sources */,
+				4AB1956C1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

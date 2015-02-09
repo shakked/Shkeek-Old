@@ -19,4 +19,7 @@
 - (void)logInUserThroughTwitterWithCompletion:(void (^)(PFUser *, NSError *))completionBlock;
 - (void)configureTwitterUserData;
 
+- (void)getLocalTopGroupsWithCompletion:(void (^)(NSArray *, NSError *))completion;
+- (void)getTopGroupsWithCompletion:(void (^)(NSArray *, NSError *))completion;
+
 @end

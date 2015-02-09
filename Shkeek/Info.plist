@@ -4,6 +4,8 @@
 <dict>
 	<key>FacebookAppID</key>
 	<string>656580611114564</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need location to find Groups nearby!</string>
 	<key>FacebookDisplayName</key>
 	<string>Shkeek</string>
 	<key>CFBundleURLTypes</key>
