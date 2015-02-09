@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ZSSWelcomeViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -45,6 +47,10 @@
     return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
 }
 
+- (void)application:(UIApplication *)application didFinishLaunchWithOptions:(NSDictionary *)options {
+    [self configureParse];
+}
+
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
@@ -60,6 +66,15 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)configureParse {
+    NSString *keyPath = [[NSBundle mainBundle] pathForResource:@"Keys" ofType:@"plist"];
+    NSDictionary *keyDict = [NSDictionary dictionaryWithContentsOfFile:keyPath];
+    NSString *parseApplicationId = keyDict[@"ParseApplicationId"];
+    NSString *parseClientKey = keyDict[@"ParseClientKey"];
+    [Parse setApplicationId:parseApplicationId
+                  clientKey:parseClientKey];    [PFFacebookUtils initializeFacebook];
 }
 
 @end
