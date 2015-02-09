@@ -47,6 +47,8 @@
 		4AA1803A1A883F22004278F1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA17F1D1A883F21004278F1 /* FacebookSDK.framework */; };
 		4AA1803B1A883F22004278F1 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA17F1E1A883F21004278F1 /* FBAudienceNetwork.framework */; };
 		4AA1803C1A883F22004278F1 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA17F1E1A883F21004278F1 /* FBAudienceNetwork.framework */; };
+		4AB1955D1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */; };
+		4AB1955E1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		4AA17F0F1A883D55004278F1 /* ZSSCloudQuerier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSCloudQuerier.m; sourceTree = "<group>"; };
 		4AA17F1D1A883F21004278F1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		4AA17F1E1A883F21004278F1 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = ../../../Documents/FacebookSDK/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		4AB1955B1A88572C00D8F02B /* UIAlertView+FrequentAlerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+FrequentAlerts.h"; sourceTree = "<group>"; };
+		4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+FrequentAlerts.m"; sourceTree = "<group>"; };
 		F0AE1B7A6A2C6B821D32BBDA /* Pods-Shkeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shkeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shkeek/Pods-Shkeek.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,6 +226,8 @@
 				4A0117571A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib */,
 				4A01175A1A8808C1004B80F6 /* ZSSLoginViewController.h */,
 				4A01175B1A8808C1004B80F6 /* ZSSLoginViewController.m */,
+				4AB1955B1A88572C00D8F02B /* UIAlertView+FrequentAlerts.h */,
+				4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */,
 				4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */,
 			);
 			name = "Login and Welcome";
@@ -407,6 +413,7 @@
 			files = (
 				4AA17F101A883D55004278F1 /* ZSSCloudQuerier.m in Sources */,
 				4A59CFB21A87DFA800DA5C1C /* AppDelegate.m in Sources */,
+				4AB1955D1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */,
 				4A01175D1A8808C1004B80F6 /* ZSSLoginViewController.m in Sources */,
 				4A0117581A8808AC004B80F6 /* ZSSWelcomeChildViewController.m in Sources */,
 				4A59CFAF1A87DFA800DA5C1C /* main.m in Sources */,
@@ -419,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A5021F21A87E4E8000DAEBE /* ZSSWelcomeViewController.m in Sources */,
+				4AB1955E1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */,
 				4A59CFC91A87DFA800DA5C1C /* ShkeekTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

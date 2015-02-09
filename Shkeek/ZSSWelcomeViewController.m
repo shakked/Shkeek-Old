@@ -42,6 +42,7 @@
 
 - (ZSSWelcomeChildViewController *)viewControllerAtIndex:(NSUInteger)index {
     
+    
     ZSSWelcomeChildViewController *childViewController = [[ZSSWelcomeChildViewController alloc] init];
     childViewController.index = index;
     
@@ -55,6 +56,11 @@
     
     if (index == 0) {
         return nil;
+    } else if (index == 4) {
+        ZSSLoginViewController *loginVC = [[ZSSLoginViewController alloc] init];
+        index--;
+        loginVC.index = index;
+        return loginVC;
     }
     
     // Decrease the index by 1 to return
@@ -73,7 +79,9 @@
     if (index == 5) {
         return nil;
     } else if (index == 4) {
-        return [[ZSSLoginViewController alloc] init];
+        ZSSLoginViewController *loginVC = [[ZSSLoginViewController alloc] init];
+        loginVC.index = index;
+        return loginVC;
     }
     
     return [self viewControllerAtIndex:index];

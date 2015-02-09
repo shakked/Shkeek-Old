@@ -14,40 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaR-x8-6gW">
-                    <rect key="frame" x="200" y="385" width="200" height="40"/>
-                    <color key="backgroundColor" red="0.0" green="0.24413465209999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="200" id="IFb-W9-K1S"/>
-                        <constraint firstAttribute="height" constant="40" id="zjw-RG-mNG"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <state key="normal" title="Sign up with Facebook">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="signUpWithFacebookButtonPressed:" destination="-1" eventType="touchUpInside" id="q2c-HB-JD4"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmh-YV-sS3">
-                    <rect key="frame" x="200" y="433" width="200" height="40"/>
-                    <color key="backgroundColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="Nxq-4z-0zR"/>
-                        <constraint firstAttribute="width" constant="200" id="nsi-qo-Yil"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <state key="normal" title="Sign up with Instagram">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="signUpWithInstagramButtonPressed:" destination="-1" eventType="touchUpInside" id="kgz-Z7-czd"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvC-6H-qUF">
-                    <rect key="frame" x="200" y="481" width="200" height="40"/>
+                    <rect key="frame" x="200" y="479" width="200" height="40"/>
                     <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="JnF-y6-hNt"/>
@@ -55,24 +23,36 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <state key="normal" title="Sign up with Twitter">
+                    <state key="normal" title="Login with Twitter">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="signUpWithTwitterButtonPressed:" destination="-1" eventType="touchUpInside" id="ixg-Jr-Y9U"/>
+                        <action selector="loginWithTwitterButtonPressed:" destination="-1" eventType="touchUpInside" id="RYn-IQ-JxC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaR-x8-6gW">
+                    <rect key="frame" x="200" y="431" width="200" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.24413465209999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="IFb-W9-K1S"/>
+                        <constraint firstAttribute="height" constant="40" id="zjw-RG-mNG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="Login with Facebook">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginWithFacebookButtonPressed:" destination="-1" eventType="touchUpInside" id="TxI-W4-85p"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Nmh-YV-sS3" firstAttribute="top" secondItem="gaR-x8-6gW" secondAttribute="bottom" constant="8" id="5Sd-j4-ws2"/>
-                <constraint firstItem="cvC-6H-qUF" firstAttribute="top" secondItem="Nmh-YV-sS3" secondAttribute="bottom" constant="8" id="OTH-ez-2Gw"/>
-                <constraint firstAttribute="bottom" secondItem="cvC-6H-qUF" secondAttribute="bottom" constant="79" id="f9x-yd-WMy"/>
-                <constraint firstItem="cvC-6H-qUF" firstAttribute="top" secondItem="Nmh-YV-sS3" secondAttribute="bottom" constant="8" id="gsT-aL-45w"/>
+                <constraint firstAttribute="bottom" secondItem="cvC-6H-qUF" secondAttribute="bottom" constant="81" id="f9x-yd-WMy"/>
                 <constraint firstAttribute="centerX" secondItem="gaR-x8-6gW" secondAttribute="centerX" id="jvS-tc-nih"/>
-                <constraint firstAttribute="centerX" secondItem="Nmh-YV-sS3" secondAttribute="centerX" id="ldl-RW-gon"/>
-                <constraint firstItem="Nmh-YV-sS3" firstAttribute="top" secondItem="gaR-x8-6gW" secondAttribute="bottom" constant="8" id="pVi-QT-3vx"/>
                 <constraint firstAttribute="centerX" secondItem="cvC-6H-qUF" secondAttribute="centerX" id="rcu-cV-HFJ"/>
+                <constraint firstItem="cvC-6H-qUF" firstAttribute="top" secondItem="gaR-x8-6gW" secondAttribute="bottom" constant="8" id="zhw-Ul-A3w"/>
             </constraints>
         </view>
     </objects>

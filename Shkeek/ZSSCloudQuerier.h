@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
 @interface ZSSCloudQuerier : NSObject
+
++ (instancetype)sharedQuerier;
+
+- (void)logInUserThroughFacebookWithCompletion:(void (^)(PFUser *, NSError *))completionBlock;
+- (void)configureFacebookUserDataWithCompletion:(void (^)(NSError *))completionBlock;
+
+- (void)logInUserThroughTwitterWithCompletion:(void (^)(PFUser *, NSError *))completionBlock;
+
 
 @end
