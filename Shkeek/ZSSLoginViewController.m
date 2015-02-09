@@ -9,6 +9,7 @@
 #import "ZSSLoginViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "ZSSCloudQuerier.h"
+#import "UIAlertView+FrequentAlerts.h"
 
 @interface ZSSLoginViewController ()
 
@@ -18,6 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    if ([PFUser currentUser]) {
+        self.view.backgroundColor = [UIColor greenColor];
+    } else {
+        self.view.backgroundColor = [UIColor redColor];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +50,7 @@
                 NSLog(@"Uh oh. The user cancelled the Facebook login.");
             } else {
                 NSLog(@"Uh oh. An error occurred: %@", error);
-                [self showLoginError];
+                [UIAlertView showLoginErrorAlert];
             }
 
         } else {
@@ -51,12 +60,7 @@
                     if (!error) {
                         [self beginOnboarding];
                     } else {
-                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error"
-                                                                        message:@"Error retrieving user data"
-                                                                       delegate:nil
-                                                              cancelButtonTitle:nil
-                                                              otherButtonTitles:@"Dismiss", nil];
-                        [alert show];
+                        [UIAlertView showNoConnectionErrorAlert];
                     }
                 }];
             } else {
@@ -68,14 +72,25 @@
 
 - (void)loginThroughTwitter {
     [[ZSSCloudQuerier sharedQuerier] logInUserThroughTwitterWithCompletion:^(PFUser *user, NSError *error) {
+        PFUser *currentUser = [PFUser currentUser];
+        
+        NSLog(@"currentUser.authData: %@",[currentUser valueForKey:@"authData"]);
+        
+        NSDictionary *authData = [[PFUser currentUser] valueForKey:@"authData"];
+        NSLog(@"authData: %@", authData);
+        
+        
         if (!user) {
             NSLog(@"Uh oh. The user cancelled the Twitter login.");
-            return;
+            if (!error) {
+                [UIAlertView showLoginErrorAlert];
+            }
         } else if (user.isNew) {
             NSLog(@"User signed up and logged in with Twitter!");
         } else {
             NSLog(@"User logged in with Twitter!");
         }
+        
     }];
 }
 

@@ -56,6 +56,11 @@
     }];
 }
 
+- (void)configureTwitterUserDataWithCompletion:(void (^)(NSError *))completionBlock {
+
+}
+
+
 - (instancetype)initPrivate {
     self = [super init];
     if (self) {

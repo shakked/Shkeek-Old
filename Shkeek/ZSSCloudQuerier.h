@@ -17,6 +17,6 @@
 - (void)configureFacebookUserDataWithCompletion:(void (^)(NSError *))completionBlock;
 
 - (void)logInUserThroughTwitterWithCompletion:(void (^)(PFUser *, NSError *))completionBlock;
-
+- (void)configureTwitterUserDataWithCompletion:(void (^)(NSError *))completionBlock;
 
 @end

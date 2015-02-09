@@ -10,8 +10,8 @@
 
 @interface UIAlertView (FrequentAlerts)
 
-- (void)showLoginErrorAlert;
-- (void)showNoConnectionErrorAlert;
++ (void)showLoginErrorAlert;
++ (void)showNoConnectionErrorAlert;
 
 
 @end
