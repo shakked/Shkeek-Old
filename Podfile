@@ -3,6 +3,7 @@ platform :ios, '7.0'
 
 target 'Shkeek' do
 pod 'AFNetworking', '~> 2.4'
+pod 'DateTools'
 end
 
 target 'ShkeekTests' do

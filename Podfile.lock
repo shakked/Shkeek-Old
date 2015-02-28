@@ -20,11 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.5.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DateTools (1.5.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4)
+  - DateTools
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  DateTools: 7df78f0c4719eb28cfd2d58a90fafd036e73156c
 
 COCOAPODS: 0.35.0

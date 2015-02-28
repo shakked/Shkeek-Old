@@ -13,5 +13,4 @@
 + (void)showLoginErrorAlert;
 + (void)showNoConnectionErrorAlert;
 
-
 @end

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ZSSWelcomeViewController.h"
+#import "ZSSFeedTableViewController.h"
+#import "ZSSGroupsTableViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <Parse/Parse.h>
@@ -21,18 +23,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self configureParse];
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    ZSSWelcomeViewController *wvc = [[ZSSWelcomeViewController alloc] init];
 
-    self.window.rootViewController = wvc;
+    [self configureParse];
+    
+    if ([PFUser currentUser]) {
+        UITabBarController *tbc = [[UITabBarController alloc] init];
+        ZSSFeedTableViewController *ftvc = [[ZSSFeedTableViewController alloc] init];
+        UINavigationController *feedNav = [[UINavigationController alloc] initWithRootViewController:ftvc];
+        UITabBarItem *tbi = [[UITabBarItem alloc] init];
+        tbi.image = [UIImage imageNamed:@"IceCreamIcon"];
+        tbi.title = @"Updates";
+        ftvc.tabBarItem = tbi;
+        
+        ZSSGroupsTableViewController *gtvc = [[ZSSGroupsTableViewController alloc] init];
+        UINavigationController *groupsNav = [[UINavigationController alloc] initWithRootViewController:gtvc];
+        UITabBarItem *tbi2 = [[UITabBarItem alloc] init];
+        tbi2.image = [UIImage imageNamed:@"GroupIcon"];
+        tbi2.title = @"Groups";
+        gtvc.tabBarItem = tbi2;
+        
+        tbc.viewControllers = @[feedNav, groupsNav];
+        
+        self.window.rootViewController = tbc;
+    } else {
+        ZSSWelcomeViewController *wvc = [[ZSSWelcomeViewController alloc] init];
+        self.window.rootViewController = wvc;
+    }
     
     [self.window makeKeyAndVisible];
     
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

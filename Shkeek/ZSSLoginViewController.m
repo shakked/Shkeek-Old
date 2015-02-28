@@ -13,12 +13,18 @@
 
 @interface ZSSLoginViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *loginWithFacebookButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginWithTwitterButton;
+    
+
 @end
 
 @implementation ZSSLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self configureViews];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -27,6 +33,19 @@
     } else {
         self.view.backgroundColor = [UIColor redColor];
     }
+}
+
+- (void)configureViews {
+    [self configureFacebookLoginButton];
+    [self configureTwitterLoginButton];
+}
+
+- (void)configureFacebookLoginButton {
+    self.loginWithFacebookButton.layer.cornerRadius = 7.0;
+}
+
+- (void)configureTwitterLoginButton {
+    self.loginWithTwitterButton.layer.cornerRadius = 7.0;
 }
 
 - (void)didReceiveMemoryWarning {

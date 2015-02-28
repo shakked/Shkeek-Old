@@ -54,6 +54,23 @@
 		4AB195681A88786400D8F02B /* testZSSCloudQuerier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB195671A88786400D8F02B /* testZSSCloudQuerier.m */; };
 		4AB1956B1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1956A1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m */; };
 		4AB1956C1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1956A1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m */; };
+		4ADAAA0C1AA1633800C27065 /* ZSSFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAAA0B1AA1633800C27065 /* ZSSFeedTableViewController.m */; };
+		4ADAAA101AA1635E00C27065 /* ZSSGroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAAA0F1AA1635E00C27065 /* ZSSGroupsTableViewController.m */; };
+		4ADAAA141AA1639B00C27065 /* ZSSFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAAA121AA1639B00C27065 /* ZSSFeedCell.m */; };
+		4ADAAA151AA1639B00C27065 /* ZSSFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA131AA1639B00C27065 /* ZSSFeedCell.xib */; };
+		4ADAAA191AA163A900C27065 /* ZSSGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAAA171AA163A900C27065 /* ZSSGroupCell.m */; };
+		4ADAAA1A1AA163A900C27065 /* ZSSGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA181AA163A900C27065 /* ZSSGroupCell.xib */; };
+		4ADAAA1D1AA181DB00C27065 /* Table-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA1C1AA181DB00C27065 /* Table-50.png */; };
+		4ADAAA1F1AA181EB00C27065 /* Home-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA1E1AA181EB00C27065 /* Home-50.png */; };
+		4ADAAA211AA181F100C27065 /* About-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA201AA181F100C27065 /* About-50.png */; };
+		4ADAAA231AA1865100C27065 /* Groups-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA221AA1865100C27065 /* Groups-33.png */; };
+		4ADAAA271AA186AB00C27065 /* Group-99.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA241AA186AB00C27065 /* Group-99.png */; };
+		4ADAAA281AA186AB00C27065 /* Group-66.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA251AA186AB00C27065 /* Group-66.png */; };
+		4ADAAA291AA186AB00C27065 /* Group-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA261AA186AB00C27065 /* Group-33.png */; };
+		4ADAAA2D1AA1897700C27065 /* Ice Cream Bowl-99.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA2A1AA1897700C27065 /* Ice Cream Bowl-99.png */; };
+		4ADAAA2E1AA1897700C27065 /* Ice Cream Bowl-66.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA2B1AA1897700C27065 /* Ice Cream Bowl-66.png */; };
+		4ADAAA2F1AA1897700C27065 /* Ice Cream Bowl-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAAA2C1AA1897700C27065 /* Ice Cream Bowl-33.png */; };
+		51D421EC3DDD335E999B0D2E /* libPods-Shkeek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E109E51B6AB934DBF3AC1B6C /* libPods-Shkeek.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +135,27 @@
 		4AB195671A88786400D8F02B /* testZSSCloudQuerier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testZSSCloudQuerier.m; path = ../Shkeek/testZSSCloudQuerier.m; sourceTree = "<group>"; };
 		4AB195691A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSFollowSuggestionTableViewController.h; sourceTree = "<group>"; };
 		4AB1956A1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSFollowSuggestionTableViewController.m; sourceTree = "<group>"; };
+		4ADAAA0A1AA1633800C27065 /* ZSSFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSFeedTableViewController.h; sourceTree = "<group>"; };
+		4ADAAA0B1AA1633800C27065 /* ZSSFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSFeedTableViewController.m; sourceTree = "<group>"; };
+		4ADAAA0E1AA1635E00C27065 /* ZSSGroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSSGroupsTableViewController.h; path = ../ZSSGroupsTableViewController.h; sourceTree = "<group>"; };
+		4ADAAA0F1AA1635E00C27065 /* ZSSGroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSSGroupsTableViewController.m; path = ../ZSSGroupsTableViewController.m; sourceTree = "<group>"; };
+		4ADAAA111AA1639B00C27065 /* ZSSFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSFeedCell.h; sourceTree = "<group>"; };
+		4ADAAA121AA1639B00C27065 /* ZSSFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSFeedCell.m; sourceTree = "<group>"; };
+		4ADAAA131AA1639B00C27065 /* ZSSFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSSFeedCell.xib; sourceTree = "<group>"; };
+		4ADAAA161AA163A900C27065 /* ZSSGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSGroupCell.h; sourceTree = "<group>"; };
+		4ADAAA171AA163A900C27065 /* ZSSGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSGroupCell.m; sourceTree = "<group>"; };
+		4ADAAA181AA163A900C27065 /* ZSSGroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSSGroupCell.xib; sourceTree = "<group>"; };
+		4ADAAA1C1AA181DB00C27065 /* Table-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Table-50.png"; path = "../../../../Downloads/Table-50.png"; sourceTree = "<group>"; };
+		4ADAAA1E1AA181EB00C27065 /* Home-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-50.png"; path = "../../../../Downloads/Home-50.png"; sourceTree = "<group>"; };
+		4ADAAA201AA181F100C27065 /* About-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "About-50.png"; path = "../../../../Downloads/About-50.png"; sourceTree = "<group>"; };
+		4ADAAA221AA1865100C27065 /* Groups-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Groups-33.png"; path = "../../../../Downloads/Groups-33.png"; sourceTree = "<group>"; };
+		4ADAAA241AA186AB00C27065 /* Group-99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group-99.png"; path = "../../../../Downloads/Group-99.png"; sourceTree = "<group>"; };
+		4ADAAA251AA186AB00C27065 /* Group-66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group-66.png"; path = "../../../../Downloads/Group-66.png"; sourceTree = "<group>"; };
+		4ADAAA261AA186AB00C27065 /* Group-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group-33.png"; path = "../../../../Downloads/Group-33.png"; sourceTree = "<group>"; };
+		4ADAAA2A1AA1897700C27065 /* Ice Cream Bowl-99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ice Cream Bowl-99.png"; path = "../../../../Downloads/Ice Cream Bowl-99.png"; sourceTree = "<group>"; };
+		4ADAAA2B1AA1897700C27065 /* Ice Cream Bowl-66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ice Cream Bowl-66.png"; path = "../../../../Downloads/Ice Cream Bowl-66.png"; sourceTree = "<group>"; };
+		4ADAAA2C1AA1897700C27065 /* Ice Cream Bowl-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ice Cream Bowl-33.png"; path = "../../../../Downloads/Ice Cream Bowl-33.png"; sourceTree = "<group>"; };
+		E109E51B6AB934DBF3AC1B6C /* libPods-Shkeek.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shkeek.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AE1B7A6A2C6B821D32BBDA /* Pods-Shkeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shkeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shkeek/Pods-Shkeek.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +184,7 @@
 				4A160E3D1A88426300481ECE /* Bolts.framework in Frameworks */,
 				4A3263A01A8841B4005812F1 /* Parse.framework in Frameworks */,
 				4AA1803B1A883F22004278F1 /* FBAudienceNetwork.framework in Frameworks */,
+				51D421EC3DDD335E999B0D2E /* libPods-Shkeek.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,9 +225,20 @@
 		4A59CFAB1A87DFA800DA5C1C /* Shkeek */ = {
 			isa = PBXGroup;
 			children = (
+				4ADAAA1C1AA181DB00C27065 /* Table-50.png */,
+				4ADAAA1E1AA181EB00C27065 /* Home-50.png */,
+				4ADAAA201AA181F100C27065 /* About-50.png */,
+				4ADAAA221AA1865100C27065 /* Groups-33.png */,
+				4ADAAA241AA186AB00C27065 /* Group-99.png */,
+				4ADAAA251AA186AB00C27065 /* Group-66.png */,
+				4ADAAA261AA186AB00C27065 /* Group-33.png */,
+				4ADAAA2A1AA1897700C27065 /* Ice Cream Bowl-99.png */,
+				4ADAAA2B1AA1897700C27065 /* Ice Cream Bowl-66.png */,
+				4ADAAA2C1AA1897700C27065 /* Ice Cream Bowl-33.png */,
 				4A59CFB01A87DFA800DA5C1C /* AppDelegate.h */,
 				4A59CFB11A87DFA800DA5C1C /* AppDelegate.m */,
 				4AA17F111A883D63004278F1 /* Login and Welcome */,
+				4ADAAA0D1AA1634100C27065 /* Home */,
 				4AA17F0E1A883D55004278F1 /* ZSSCloudQuerier.h */,
 				4AA17F0F1A883D55004278F1 /* ZSSCloudQuerier.m */,
 				4AB195631A88766600D8F02B /* ZSSLocationQuerier.h */,
@@ -239,13 +289,38 @@
 				4A0117571A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib */,
 				4A01175A1A8808C1004B80F6 /* ZSSLoginViewController.h */,
 				4A01175B1A8808C1004B80F6 /* ZSSLoginViewController.m */,
+				4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */,
 				4AB1955B1A88572C00D8F02B /* UIAlertView+FrequentAlerts.h */,
 				4AB1955C1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m */,
-				4A01175C1A8808C1004B80F6 /* ZSSLoginViewController.xib */,
 				4AB195691A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.h */,
 				4AB1956A1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m */,
 			);
 			name = "Login and Welcome";
+			sourceTree = "<group>";
+		};
+		4ADAAA0D1AA1634100C27065 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4ADAAA0A1AA1633800C27065 /* ZSSFeedTableViewController.h */,
+				4ADAAA0B1AA1633800C27065 /* ZSSFeedTableViewController.m */,
+				4ADAAA0E1AA1635E00C27065 /* ZSSGroupsTableViewController.h */,
+				4ADAAA0F1AA1635E00C27065 /* ZSSGroupsTableViewController.m */,
+				4ADAAA1B1AA163AE00C27065 /* Cells */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4ADAAA1B1AA163AE00C27065 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4ADAAA111AA1639B00C27065 /* ZSSFeedCell.h */,
+				4ADAAA121AA1639B00C27065 /* ZSSFeedCell.m */,
+				4ADAAA131AA1639B00C27065 /* ZSSFeedCell.xib */,
+				4ADAAA161AA163A900C27065 /* ZSSGroupCell.h */,
+				4ADAAA171AA163A900C27065 /* ZSSGroupCell.m */,
+				4ADAAA181AA163A900C27065 /* ZSSGroupCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		57D4CB268594AE646AD2F537 /* Pods */ = {
@@ -281,6 +356,7 @@
 				4A32639F1A8841B4005812F1 /* ParseUI.framework */,
 				4AA17F1E1A883F21004278F1 /* FBAudienceNetwork.framework */,
 				4AA17F1D1A883F21004278F1 /* FacebookSDK.framework */,
+				E109E51B6AB934DBF3AC1B6C /* libPods-Shkeek.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,11 +445,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A5021F31A87E4E8000DAEBE /* ZSSWelcomeViewController.xib in Resources */,
+				4ADAAA271AA186AB00C27065 /* Group-99.png in Resources */,
+				4ADAAA2E1AA1897700C27065 /* Ice Cream Bowl-66.png in Resources */,
 				4A59CFD31A87E12300DA5C1C /* Keys.plist in Resources */,
+				4ADAAA281AA186AB00C27065 /* Group-66.png in Resources */,
+				4ADAAA2D1AA1897700C27065 /* Ice Cream Bowl-99.png in Resources */,
+				4ADAAA151AA1639B00C27065 /* ZSSFeedCell.xib in Resources */,
+				4ADAAA231AA1865100C27065 /* Groups-33.png in Resources */,
 				4A59CFBD1A87DFA800DA5C1C /* LaunchScreen.xib in Resources */,
 				4A01175E1A8808C1004B80F6 /* ZSSLoginViewController.xib in Resources */,
+				4ADAAA2F1AA1897700C27065 /* Ice Cream Bowl-33.png in Resources */,
 				4A0117591A8808AC004B80F6 /* ZSSWelcomeChildViewController.xib in Resources */,
+				4ADAAA1A1AA163A900C27065 /* ZSSGroupCell.xib in Resources */,
 				4A59CFBA1A87DFA800DA5C1C /* Images.xcassets in Resources */,
+				4ADAAA211AA181F100C27065 /* About-50.png in Resources */,
+				4ADAAA291AA186AB00C27065 /* Group-33.png in Resources */,
+				4ADAAA1D1AA181DB00C27065 /* Table-50.png in Resources */,
+				4ADAAA1F1AA181EB00C27065 /* Home-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,14 +514,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADAAA101AA1635E00C27065 /* ZSSGroupsTableViewController.m in Sources */,
 				4AA17F101A883D55004278F1 /* ZSSCloudQuerier.m in Sources */,
 				4AB195651A88766600D8F02B /* ZSSLocationQuerier.m in Sources */,
 				4AB1956B1A887C3500D8F02B /* ZSSFollowSuggestionTableViewController.m in Sources */,
 				4A59CFB21A87DFA800DA5C1C /* AppDelegate.m in Sources */,
+				4ADAAA191AA163A900C27065 /* ZSSGroupCell.m in Sources */,
 				4AB1955D1A88572C00D8F02B /* UIAlertView+FrequentAlerts.m in Sources */,
 				4A01175D1A8808C1004B80F6 /* ZSSLoginViewController.m in Sources */,
 				4A0117581A8808AC004B80F6 /* ZSSWelcomeChildViewController.m in Sources */,
+				4ADAAA141AA1639B00C27065 /* ZSSFeedCell.m in Sources */,
 				4A59CFAF1A87DFA800DA5C1C /* main.m in Sources */,
+				4ADAAA0C1AA1633800C27065 /* ZSSFeedTableViewController.m in Sources */,
 				4A5021F11A87E4E8000DAEBE /* ZSSWelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
