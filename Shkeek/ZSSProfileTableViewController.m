@@ -1,18 +1,18 @@
 //
-//  ZSSGroupsTableViewController.m
-//  
+//  ZSSProfileTableViewController.m
+//  Shkeek
 //
-//  Created by Zachary Shakked on 2/27/15.
-//
+//  Created by Zachary Shakked on 2/28/15.
+//  Copyright (c) 2015 Shkeek Inc. All rights reserved.
 //
 
-#import "ZSSGroupsTableViewController.h"
+#import "ZSSProfileTableViewController.h"
 
-@interface ZSSGroupsTableViewController ()
+@interface ZSSProfileTableViewController ()
 
 @end
 
-@implementation ZSSGroupsTableViewController
+@implementation ZSSProfileTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,10 +22,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    UITabBarItem *tbi = [[UITabBarItem alloc] init];
-    tbi.image = [UIImage imageNamed:@"GroupIcon"];
-    tbi.title = @"Groups";
-    self.tabBarItem = tbi;
 }
 
 - (void)didReceiveMemoryWarning {

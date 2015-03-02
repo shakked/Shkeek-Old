@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "ZSSWelcomeViewController.h"
 #import "ZSSFeedTableViewController.h"
-#import "ZSSGroupsTableViewController.h"
+#import "ZSSGroupsCollectionViewController.h"
+#import "ZSSProfileTableViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <Parse/Parse.h>
@@ -32,19 +33,26 @@
         UITabBarController *tbc = [[UITabBarController alloc] init];
         ZSSFeedTableViewController *ftvc = [[ZSSFeedTableViewController alloc] init];
         UINavigationController *feedNav = [[UINavigationController alloc] initWithRootViewController:ftvc];
-        UITabBarItem *tbi = [[UITabBarItem alloc] init];
-        tbi.image = [UIImage imageNamed:@"IceCreamIcon"];
-        tbi.title = @"Updates";
-        ftvc.tabBarItem = tbi;
+        UITabBarItem *feedTabItem = [[UITabBarItem alloc] init];
+        feedTabItem.image = [UIImage imageNamed:@"IceCreamIcon"];
+        feedTabItem.title = @"Updates";
+        ftvc.tabBarItem = feedTabItem;
         
-        ZSSGroupsTableViewController *gtvc = [[ZSSGroupsTableViewController alloc] init];
+        ZSSGroupsCollectionViewController *gtvc = [[ZSSGroupsCollectionViewController alloc] initWithCollectionViewLayout:[UICollectionViewLayout ];
         UINavigationController *groupsNav = [[UINavigationController alloc] initWithRootViewController:gtvc];
-        UITabBarItem *tbi2 = [[UITabBarItem alloc] init];
-        tbi2.image = [UIImage imageNamed:@"GroupIcon"];
-        tbi2.title = @"Groups";
-        gtvc.tabBarItem = tbi2;
+        UITabBarItem *groupsTabItem = [[UITabBarItem alloc] init];
+        groupsTabItem.image = [UIImage imageNamed:@"GroupIcon"];
+        groupsTabItem.title = @"Groups";
+        gtvc.tabBarItem = groupsTabItem;
         
-        tbc.viewControllers = @[feedNav, groupsNav];
+        ZSSProfileTableViewController *ptvc = [[ZSSProfileTableViewController alloc] init];
+        UINavigationController *profileNav = [[UINavigationController alloc] initWithRootViewController:ptvc];
+        UITabBarItem *profileTabItem = [[UITabBarItem alloc] init];
+        profileTabItem.image = [UIImage imageNamed:@"ProfileIcon"];
+        profileTabItem.title = @"Profile";
+        ptvc.tabBarItem = profileTabItem;
+        
+        tbc.viewControllers = @[feedNav, groupsNav, profileNav];
         
         self.window.rootViewController = tbc;
     } else {

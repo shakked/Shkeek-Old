@@ -21,11 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureTableView];
-    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
-    [refreshControl addTarget:self
-                       action:@selector(refresh)
-             forControlEvents:UIControlEventValueChanged];
-    self.refreshControl = refreshControl;
     
     _updates = @[@{@"groupImage" : [UIImage imageNamed:@"Table-50.png"],
                    @"update" : @"It looks like we won't be having practice tonight. Please report to us if you would still like to come",
@@ -43,6 +38,12 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"ZSSFeedCell" bundle:nil] forCellReuseIdentifier:@"ZSSFeedCell"];
     self.tableView.estimatedRowHeight = 90.0f;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self
+                       action:@selector(pullToResfreshActivated)
+             forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,7 +51,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)refresh {
+- (void)pullToResfreshActivated {
     [NSThread sleepForTimeInterval:2.0f];
 
     
@@ -74,6 +75,7 @@
     
     cell.updateLabel.text = update[@"update"];
     cell.groupImageView.image = [UIImage imageNamed:@"Table-50.png"];
+    
     NSDate *timeOfUpdate = update[@"date"];
     cell.timeLabel.text = timeOfUpdate.shortTimeAgoSinceNow;
     

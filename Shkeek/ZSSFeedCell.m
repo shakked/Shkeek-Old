@@ -12,6 +12,9 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    self.groupImageView.layer.cornerRadius = 25.0f;
+    self.groupImageView.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -19,5 +22,7 @@
 
     // Configure the view for the selected state
 }
+
+
 
 @end
